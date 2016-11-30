@@ -28,7 +28,6 @@
   \setkeys{glssetup}{#1}
 }
 
-% 这个函数是用来断词用的
 \NewDocumentCommand{\TextWithBox}{ >{\SplitList{&}} m }{%
   \ProcessList{#1}{\abox}%
 }
@@ -37,7 +36,7 @@
   \allowbreak\mbox{#1}%
 }
 
-% 这个命令用来声明一个
+
 \def\type@term@default{default}
 \def\type@term@noacronym{no acronym}
 \def\type@term@nofullname{no fullname}
