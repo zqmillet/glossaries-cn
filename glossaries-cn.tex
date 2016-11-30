@@ -497,29 +497,4 @@
 % \end{document}
 \end{lstlisting}
 
-% \section{\glsintoc{ICS}}
-% \gls{ICS} 是一种\gls{CPS}，前半句话 \gls{ICS} 和 \gls{CPS} 都是首次被调用，所以显示了\gls{fullname}以及\gls{acronym}，后来调用非首次调用，所以显示的是\gls{acronym}。显示在标题中的 \gls{ICS} 不会被认为是首次调用，故不会显示\gls{fullname}以及\gls{acronym}。
-
-% \gls{AT} 和\gls{FT} 只有\gls{fullname}没有\gls{acronym}，故在声明的时候需要添加 \texttt{no acronym} 参数，故在首次调用时只显示英文全程，不显示\gls{acronym}。后续调用因没有\gls{acronym}，只会显示中文全称，比如\gls{AT}和\gls{FT}。 
-
-% 还有一种比较奇葩的术语，这种术语只有\gls{acronym}，没有\gls{fullname}，比如这个词语：\gls{SB}，这是第二次调用，你就是一个大 \gls{SB}。
-
-% 还有一种中文只是固定搭配，既没有\gls{fullname}也没有\gls{acronym}，这时候在声明的时候需要添加 \texttt{phrase} 参数。固定搭配不论在何时何地使用都只显示中文。比如\gls{SL}和\gls{OL}第一次被调用，\gls{SL}和\gls{OL}第二次被调用。 
-
-% 以上三种术语还有另一种调用方式，是利用 \verb"\glsdesc" 进行调用，这种调用只会显示其中文，但是不算首次调用，利用 \verb"\glsdesc" 显示出来的是有断词设置的。
-
-% \begin{figure}[!htb]
-%   \centering
-%   \begin{tikzpicture}
-%     \node[rectangle, draw, align = center, text width = 2em] at (0, 0) {\glsdesc{ICS}};
-%     \node[rectangle, draw, align = center, text width = 3em] at (2, 0) {\glsdesc{ICS}};
-%     \node[rectangle, draw, align = center, text width = 4em] at (4.5, 0) {\glsdesc{ICS}};
-%   \end{tikzpicture}
-%   \caption{\glsintoc{ICS}断词测试}
-% \end{figure}
-
-% 数学符号只有两种，一种是需要显示在符号表中的符号，另一种是无须显示在符号表中的符号，前者使用 \texttt{default} 参数，后者使用 \texttt{hide} 参数。比如 $\gls{pi}$ 和 $\gls{xi}$ 会显示在符号表中，而 $\gls{a}$ 和 $\gls{b}$ 则不会显示在符号表中。
-
-% $\gls{pi}, \gls{xi}, \gls{a}, \gls{b}$ 第二次被调用。
-
 \end{document}
