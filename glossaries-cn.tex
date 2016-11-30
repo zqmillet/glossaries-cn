@@ -424,8 +424,7 @@
 如果你想在第 4 次引用的时候才给出某个词的解释，那么，前面 3 个的调用可以使用 \lstinline{\glsintoc} 命令，第 4 个以及之后的引用都用 \lstinline{\gls} 命令就可以了，如代码 \ref{lst:trick of gls and glsintoc} 所示。此时点击``DotA''会跳转到有解释的那个``DotA''。
 \begin{lstlisting}[style      = latexcode,
                    caption    = {\texttt{\backslash gls} 与 \texttt{\backslash glsintoc} 的灵活使用},
-                   label      = {lst:trick of gls and glsintoc},
-                   showspaces = true]
+                   label      = {lst:trick of gls and glsintoc}]
 经常听室友们说 \glsintoc{DotA} 的 \glsintoc{DotA} 的，那么 \glsintoc{DotA} 到底是什么？\gls{DotA} 可以译作守护古树、守护遗迹、远古遗迹守卫， 是由暴雪公司出品即时战略游戏《魔兽争霸 3》的一款多人即时对战、自定义地图，可支持 10 个人同时连线游戏，是暴雪公司官方认可的魔兽争霸的 RPG 地图。
 \end{lstlisting}
 
@@ -465,7 +464,9 @@
   \gls{f} = \int_{-\infty}^{+\infty}\gls{ff}(\xi)\gls{e}^{2\gls{pi}\gls{i}\xi x} {\rm d}\xi
 \end{equation}
 
-\begin{lstlisting}[style = latexcode]
+\begin{lstlisting}[style   = latexcode,
+                   caption = {应用举例的 \LaTeX{} 代码},
+                   label   = {lst:LaTeX Code of Example}]
 % \NewTerm 和 \NewSymbol 需要放在导言区 
 \NewTerm[no acronym] {FT}   {Fourier Transform}               {傅里叶变换}
 \NewTerm[phrase]     {AFT}  {}                                {傅里叶逆变换}
