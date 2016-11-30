@@ -149,7 +149,7 @@
 \PrintSymbolList
 
 \section{介绍}
-中文的\glsintoc{term}与英文的\gls{term} 不同，是因为中文除了\gls{fullname}和\gls{acronym}之外，还需要\gls{chinese}，这导致 \LaTeX{} 自带的 \texttt{glossaries} \gls{PCK} 和 \texttt{datagidx} \gls{PCK}需要很多配置才能使用在中文的学位论文中。\texttt{\gls{ME}} \glsintoc{PCK}基于 \texttt{datagidx} \gls{PCK}，并在 \texttt{datagidx} \gls{PCK}的基础上结合中文论文的特点做了一些特殊的定制，方便中文论文的写作。
+中文的\glsintoc{term}与英文的\gls{term} 不同，是因为中文除了\gls{fullname}和\gls{acronym}之外，还需要\gls{chinese}，这导致 \LaTeX{} 自带的 \texttt{glossaries} \gls{PCK} 和 \texttt{datagidx} \gls{PCK}需要很多配置才能使用在中文的论文中。\texttt{\gls{ME}} \glsintoc{PCK}基于 \texttt{datagidx} \gls{PCK}，并在 \texttt{datagidx} \gls{PCK}的基础上结合中文论文的特点做了一些特殊的定制，方便中文论文的写作。
 
 中文论文中有 4 种\gls{term}：
 \begin{itemize}
@@ -295,7 +295,7 @@
 命令 \lstinline{\PrintTermList} 和 \lstinline{\PrintSymbolList} 均无参数，使用方法是在需要打印\gls{term}表的地方插入 \lstinline{\PrintTermList}，在需要打印\gls{symbol}表的地方插入 \lstinline{\PrintSymbolList} 即可。命令 \lstinline{\PrintTermList} 只打印\gls{default}，按照\gls{acronym}的字母排序，而命令 \lstinline{\PrintSymbolList} 只打印\gls{printsymbol}，按照定义的顺序培训。
 
 \subsection{\glsintoc{PCK}设置}
-\texttt{\gls{ME}} \gls{PCK} 提供了设置命令 \lstinline{\glssetup}，用来设置 \texttt{\gls{ME}} \gls{PCK}的部分参数。
+\texttt{\gls{ME}} \gls{PCK}提供了设置命令 \lstinline{\glssetup}，用来设置 \texttt{\gls{ME}} \gls{PCK}的部分参数。
 \begin{command}{\lstinline{\\glssetup}}{}
 \verb"\glssetup"\marg{\var{配置命令}}
 \end{command}
@@ -474,7 +474,7 @@
 \NewTerm             {DFT}  {Discrete Fourier Transform}      {离散傅里叶变换}
 \NewTerm             {FFT}  {Fast Fourier Transformation}     {快速傅里叶变换}
 \NewSymbol           {f}    {f}                               {原函数}
-\NewSymbol           {ff}   {\hat{f}}                         {原函数 $\gls{f}$ 的傅里叶变换}
+\NewSymbol           {ff}   {\hat{f}}                         {原函数 $\glsintoc{f}$ 的傅里叶变换}
 \NewSymbol           {e}    {\mathrm{e}}                      {自然对数的底}
 \NewSymbol           {i}    {\mathrm{i}}                      {虚数}
 \NewSymbol[hide]     {pi}   {\pi}                             {圆周率}
