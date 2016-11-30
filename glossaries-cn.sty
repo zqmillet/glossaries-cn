@@ -230,7 +230,7 @@
   \ifcsname#1.DescriptionWithoutBox\endcsname%
     \texorpdfstring{\protect\datagidxlink{#1}{\textcolor{\@termcolor}{\glsdispentry{#1}{Description}}}}{\csname#1.DescriptionWithoutBox\endcsname}%
   \else%
-    \texorpdfstring{\protect\gls{ABC}}{2333}%
+    \protect\datagidxlink{#1}{\textcolor{\@symbolcolor}{\glsdispentry{#1}{Text}}}%
   \fi%
 }
 
